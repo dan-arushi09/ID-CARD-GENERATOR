@@ -1,0 +1,198 @@
+/* asdfghjkl  */
+/*!  */
+/*.  */
+/*  */
+/*@  */
+/**  */
+/*+  */
+/*-  */
+
+
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+h2 {
+    color: rgb(0, 180, 0);
+}
+
+/*+ Form Container */
+.container {
+    width: 800px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/*+ HEADING */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    font-family: 'Times New Roman', serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 180, 0);
+    font-weight: 500;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="file"] {
+    background: transparent;
+    color: #777;
+}
+
+/*+ GENERATE, DOWNLOAD BUTTON */
+button {
+    font-family: 'Times New Roman', serif;
+    background: rgb(0, 180, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 18px;
+    padding: 12px;
+    width: 600px;
+}
+
+button:hover {
+    background: rgb(0, 160, 0);
+}
+
+/*+ DOWNLOAD BUTTON */
+#downloadBtn {
+    /* initially hidden */
+    display: none;
+    max-width: 150px;
+    padding: 12px 25px;
+    margin-top: 5px;
+    /* jab dikhaye tab block */
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    min-height: 18px;
+}
+
+.file-info {
+    font-size: 12px;
+    color: #777;
+    margin-top: -8px;
+}
+
+/*+ GENERATED CARD */
+#generatedID {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+
+.generated-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.generated-header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-line {
+    width: 90%;
+    height: 1.5px;
+    background: rgb(0, 180, 0);
+    margin: 10px auto 20px;
+}
+
+.generated-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*+ BOX OF THE PICTURE*/
+.left-section {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; */
+
+    width: 250px;
+    height: 240px;
+    border: 3px solid #5a5a5a;
+    margin-left: 50px;
+    margin-right: 120px;
+    background-size: cover;        /* crop & fill */
+    background-position: center;   /* center the image */
+    background-repeat: no-repeat;
+}
+
+/*+ STUDENT PICTURE*/
+.left-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-section {
+    width: 60%;
+}
+
+/*+  IDENTITY CARD TITLE*/
+.identity-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/*+  STUDENT DETAILS*/
+.right-section p {
+    margin: 6px 0;
+}
+
+/*+ CARD NO, DIRECTOR SIGN*/
+.generated-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card-number {
+    margin-left: 100px;
+    text-align: center;
+}
+
+.blank-line {
+    border-bottom: 1px solid black;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.director {
+    border-top: 1px solid black;
+    padding-top: 5px;
+    width: 120px;
+    text-align: center;
+    margin-right: 20px;
+}

@@ -1,0 +1,46 @@
+<!-- asdfghjkl -->
+<!--! -->
+<!--. -->
+<!--/ -->
+<!--@ -->
+<!--* -->
+<!--+ -->
+<!--- -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ID CARD GENERATOR</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2>IDENTITY CARD GENERATOR</h2>
+        <div class="container">
+            <div id="errorMsg" class="error"></div>
+            <form id="idForm">
+                <input type="text" id="college" placeholder="College Name" required>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="course" placeholder="Course" required>
+                <input type="text" id="branch" placeholder="Branch" required>
+                <input type="text" id="enrollment" placeholder="Enrollment No." required>
+                <input type="text" id="batch" placeholder="Batch" required>
+                <input type="number" id="mobile" placeholder="Mobile No." required>
+                <input type="text" id="bloodGroup" placeholder="Blood Group" required>
+                <input type="number" id="cardNo" placeholder="Card No. (Optional)">
+
+                <input type="file" id="photo" accept=".jpg,.jpeg,.png" required>
+                <small class="file-info">JPG, PNG, JPEG only</small>
+            </form>
+        </div>
+        <button onclick="generateID()">GENERATE</button>
+        
+        <!--+ ID Card will appear here -->
+        <div id="generatedID"></div>
+        <button id="downloadBtn" onclick="downloadID()">DOWNLOAD</button>
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    </body>
+</html>
